@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://clnxyujbkrye"]
+
+[ext_resource type="Texture2D" uid="uid://blqg0y7xcetmt" path="res://Sprites/BACKGROUND/CLAUDEs.png" id="1_6pedr"]
+[ext_resource type="Texture2D" uid="uid://c2pyrjl62bvpl" path="res://Sprites/BACKGROUND/path172.png" id="2_syfuq"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_s2c3o"]
+load_path = "res://.godot/imported/MOUNTAINS.png-19640c398289da0a3d028be5b57437ce.ctex"
+
+[node name="Menu" type="Node2D" unique_id=547430199]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=340614197]
+
+[node name="Cloude" type="ParallaxLayer" parent="ParallaxBackground" unique_id=169505701]
+position = Vector2(0, -1070)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Cloude" unique_id=2017101258]
+texture = ExtResource("1_6pedr")
+
+[node name="Close_Mountain" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1738091263]
+position = Vector2(0, -185)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Close_Mountain" unique_id=821068442]
+position = Vector2(0, -185)
+texture = SubResource("CompressedTexture2D_s2c3o")
+
+[node name="Mountain" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1549988417]
+position = Vector2(0, -197)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Mountain" unique_id=700747469]
+position = Vector2(0, 28)
+texture = ExtResource("2_syfuq")
